@@ -1,0 +1,15 @@
+<div class="home-bg">
+  <div class="home-box">
+    <h1>College Cook</h1>
+
+    <p><%= @response ["text"] %></p>
+    <br>
+
+    <div class = "home-search-box">
+      <%= form_tag("/result", :method => "post") do %>
+      <%= text_field_tag 'search', nil, placeholder: "Search Recipes by Ingredient (separated by commas)", :class => "search-form"%>
+      <%= submit_tag "Search", :name => nil, :class => "search-button" %>
+      <% end %>
+    </div>
+  </div>
+</div>

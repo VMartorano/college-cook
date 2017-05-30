@@ -1,0 +1,153 @@
+
+/* == Phone/Tablet == */
+@media (max-width: 48em) {
+
+  .log-container {
+    background-image: url("food_background.jpg");
+    padding-top: 60px;
+    padding-bottom: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -25px;
+    // margin-bottom: 60px;
+  }
+
+
+  .title-box {
+    // color: #880000;
+    color: #f7f7eb;
+    text-align: center;
+    font-family: "Righteous";
+    font-size: 40px;
+    // text-shadow: -4px 0 #f7f7eb,0 4px #f7f7eb,4px 0 #f7f7eb,0 -4px #f7f7eb;
+    // float:left;
+    width: 300px;
+    margin-left: 25%;
+    margin-right: 7%;
+    margin-top: 8%;
+  }
+
+  .log-box {
+    // background-color: #f7f7eb;
+    background-color: rgba(#f7f7eb, 0.9);
+    width: 60%;
+    margin-left: 17%;
+    margin-right: 5%;
+    // float: right;
+    vertical-align: middle;
+    margin-top: 10%;
+    // border: 2px solid #f7f7eb;
+    border: 2px solid #880000;
+    border-radius: 12px;
+    padding-left: 5%;
+    padding-bottom: 2%;
+    color: #880000;
+    font-family: "Comfortaa";
+  }
+
+  .edit-bg {
+    background-image: url("edit-bg.jpg");
+    padding-top: 60px;
+    padding-bottom: 90px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -25px;
+    // margin-bottom: 60px;
+  }
+
+  .edit-box {
+    background-color: rgba(#f7f7eb, 0.9);
+    width: 50%;
+    margin-left: 10%;
+    margin-right: 5%;
+    vertical-align: middle;
+    margin-top: 5%;
+    // border: 2px solid #f7f7eb;
+    border: 2px solid #880000;
+    border-radius: 12px;
+    padding-left: 5%;
+    padding-bottom: 2%;
+    padding-right: 25%;
+    color: #880000;
+    font-family: "Comfortaa";
+    font-size: 16px;
+  }
+
+  .edit-text {
+    width: 150%;
+  }
+}
+
+/* == Larger than tablet == */
+@media (min-width: 48em) {
+
+  .log-container {
+    background-image: url("food_background.jpg");
+    padding-top: 60px;
+    padding-bottom: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -25px;
+    // margin-bottom: 60px;
+  }
+
+  .title-box {
+    // color: #880000;
+    color: #f7f7eb;
+    text-align: center;
+    font-family: "Righteous";
+    font-size: 55px;
+    // text-shadow: -4px 0 #f7f7eb,0 4px #f7f7eb,4px 0 #f7f7eb,0 -4px #f7f7eb;
+    float:left;
+    width: 35%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 8%;
+
+  }
+
+  .log-box {
+    // background-color: #f7f7eb;
+    background-color: rgba(#f7f7eb, 0.9);
+    width: 35%;
+    margin-left: 5%;
+    margin-right: 5%;
+    float: right;
+    vertical-align: middle;
+    margin-top: 15%;
+    // border: 2px solid #f7f7eb;
+    border: 2px solid #880000;
+    border-radius: 12px;
+    padding-left: 5%;
+    padding-bottom: 2%;
+    color: #880000;
+    font-family: "Comfortaa";
+  }
+
+  .edit-bg {
+    background-image: url("edit-bg.jpg");
+    padding-top: 60px;
+    padding-bottom: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -25px;
+    // margin-bottom: 60px;
+  }
+
+  .edit-box {
+    background-color: rgba(#f7f7eb, 0.9);
+    width: 35%;
+    margin-left: 15%;
+    margin-right: 5%;
+    vertical-align: middle;
+    margin-top: 5%;
+    // border: 2px solid #f7f7eb;
+    border: 2px solid #880000;
+    border-radius: 12px;
+    padding-left: 5%;
+    padding-bottom: 2%;
+    padding-right: 5%;
+    color: #880000;
+    font-family: "Comfortaa";
+  }
+}

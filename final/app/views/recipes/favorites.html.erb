@@ -1,0 +1,16 @@
+<div class="recipe-try">
+  <h2 class="try-h2">Try a new recipe</h2>
+  <div class = "try-container">
+    <% @response ["recipes"].each do |response| %>
+      <a href="/recipes/show/<%= response ["id"]%>">
+        <div class="try-box">
+          <img src="<%= response ["image"] %>")>
+          <br>
+          <p><%= response ["title"] %></p>
+          <br>
+        </div>
+      </a>
+    <% end %>
+  </div>
+  <p class="reload"><a href="/recipes/try">Reload</a></p><br/>
+</div>

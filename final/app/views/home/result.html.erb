@@ -1,0 +1,15 @@
+<div class="recipe-try">
+  <h2 class="try-h2">Search results</h2>
+  <div class = "try-container">
+    <% @response.each do |response| %>
+      <a href="/recipes/show/<%= response ["id"]%>">
+        <div class="try-box">
+          <img src="<%= response ["image"] %>")>
+          <br>
+          <p><%= response ["title"] %></p>
+          <br>
+        </div>
+      </a>
+    <% end %>
+  </div>
+</div>
