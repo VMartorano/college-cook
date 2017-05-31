@@ -13,33 +13,33 @@ class RecipesController < ApplicationController
 
   end
 
-  def favorites
-    @response = Unirest.get "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/#{params[:id]}/information?includeNutrition=false",
-    headers:{
-      "X-Mashape-Key" => ENV["MASHAPE_API_KEY"],
-      "Accept" => "application/json"
-    }
+  # def favorites
+  #   @response = Unirest.get "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/#{params[:id]}/information?includeNutrition=false",
+  #   headers:{
+  #     "X-Mashape-Key" => ENV["MASHAPE_API_KEY"],
+  #     "Accept" => "application/json"
+  #   }
+  #
+  # end
 
-  end
-
-  def saver
-
-    @response = Unirest.get "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/#{params[:id]}/information?includeNutrition=false",
-    headers:{
-      "X-Mashape-Key" => ENV["MASHAPE_API_KEY"],
-      "Accept" => "application/json"
-    }
-
-    @response = response.body
-
-    @favorite = Favorite.new(title: @response.body["title"],  image: @response.body["image"])
-
-    @user = User.find(params[:user_id])
-    new_favorite = @favorite
-    @user.favorite = new_favorite.to_i
-
-    @user.save #store to database!
-  end
+  # def saver
+  #
+  #   @response = Unirest.get "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/#{params[:id]}/information?includeNutrition=false",
+  #   headers:{
+  #     "X-Mashape-Key" => ENV["MASHAPE_API_KEY"],
+  #     "Accept" => "application/json"
+  #   }
+  #
+  #   @response = response.body
+  #
+  #   @favorite = Favorite.new(title: @response.body["title"],  image: @response.body["image"])
+  #
+  #   @user = User.find(params[:user_id])
+  #   new_favorite = @favorite
+  #   @user.favorite = new_favorite.to_i
+  #
+  #   @user.save #store to database!
+  # end
 
 
   def show

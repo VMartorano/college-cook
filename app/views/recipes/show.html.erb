@@ -1,31 +1,31 @@
 <div class="show-recipe-try">
+  <div class="show-recipe-box">
+    <div class="show-container">
 
-  <br><br>
-    <img src="<%= @response.body["image"] %>">
-    <br>
-    <h2><%= @response.body["title"] %></h2>
-
-    <a href="#" action="/saver" method ="post"><%= @response.body["id"] %>Save Recipe</a>
-
-    <p><strong>Servings: </strong><%= @response.body["servings"] %></p>
-
-    <ul>
-      <% @ingredients.each do |ing| %>
-
-        <li><%= ing["originalString"] %></li>
-
-      <% end %>
-    </ul>
-    <br>
-    <p><strong>Instructions:</strong><p>
-    <ol>
-      <% @instructions.each do |inst| %>
-
-        <li><%= inst["step"] %></li>
-        <br>
-
-      <% end %>
-    </ol>
+    <br><br>
+      <img src="<%= @response.body["image"] %>">
+      <br>
+      <h2><%= @response.body["title"] %></h2>
 
 
+      <p><strong>Servings: </strong><%= @response.body["servings"] %></p>
+
+      <ul>
+        <% @ingredients.each do |ing| %>
+
+          <li><%= ing["originalString"] %></li>
+
+        <% end %>
+      </ul>
+      <br>
+      <p><strong>Instructions:</strong><p>
+      <ol>
+        <% @instructions.each do |inst| %>
+
+          <li><%= inst["step"] %></li>
+          <br>
+        <% end %>
+      </ol>
+    </div>
+  </div>
 </div>

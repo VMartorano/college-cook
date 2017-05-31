@@ -54,7 +54,7 @@ $flex_nav_breakpoint: 48em;
         height: 70%;
         // max-height: 400px;
         // min-height: 266.66px;
-        border-radius: 15px;
+        border-radius: 10px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
         z-index: 2;
@@ -78,7 +78,8 @@ $flex_nav_breakpoint: 48em;
   }
 
   .show_body {
-    background-color: $tertiaryColor;
+    background: url("empty-plate.jpg");
+    background-size: cover;
   }
 
   .show-recipe-try {
@@ -89,6 +90,17 @@ $flex_nav_breakpoint: 48em;
 
     color: $primaryColor;
 
+    .show-recipe-box {
+      background-color: rgba($tertiaryColor, 0.6);
+      border-radius: 10px;
+      margin-top: 20px;
+
+      .show-container {
+        margin-left: 2%;
+        margin-right: 2%;
+      }
+    }
+
     img {
     width: 70%;
     // max-width: 300px;
@@ -96,7 +108,7 @@ $flex_nav_breakpoint: 48em;
     height: 35%;
     // max-height: 400px;
     // min-height: 266.66px;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-left: 15%;
     margin-right: 15%;
     }
@@ -164,7 +176,7 @@ $flex_nav_breakpoint: 48em;
         height: 291.66px;
         // max-height: 400px;
         // min-height: 266.66px;
-        border-radius: 15px;
+        border-radius: 10px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
         z-index: 2;
@@ -188,7 +200,8 @@ $flex_nav_breakpoint: 48em;
   }
 
   .show_body {
-    background-color: $tertiaryColor;
+    background: url("empty-plate.jpg");
+    background-size: cover;
   }
 
   .show-recipe-try {
@@ -199,6 +212,16 @@ $flex_nav_breakpoint: 48em;
 
     color: $primaryColor;
 
+    .show-recipe-box {
+      background-color: rgba($tertiaryColor, 0.6);
+      border-radius: 10px;
+      margin-top: 20px;
+
+      .show-container {
+        margin-left: 2%;
+        margin-right: 2%;
+      }
+    }
     img {
     width: 40%;
     // max-width: 300px;
@@ -206,10 +229,10 @@ $flex_nav_breakpoint: 48em;
     height: 35%;
     // max-height: 400px;
     // min-height: 266.66px;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-left: 30%;
     margin-right: 30%;
-    
+
 
     }
 
