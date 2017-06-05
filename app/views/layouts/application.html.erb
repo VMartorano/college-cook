@@ -21,11 +21,11 @@
               <input class="trigger" type="checkbox" id="mainNavButton">
               <label for="mainNavButton" onclick>Menu</label>
               <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About Us</a></li>
+                <li><%= link_to "Home", "/", class: "navbar_link"%></li>
+                <li><%= link_to "About Us", "/about", class: "navbar_link"%></li>
                 <!-- <li><a href="/recipes/favorites">My Recipies</a></li> -->
-                <li><a href="/recipes/try">Try Something New</a></li>
-                <li><a href="/contact">Contact Us</a></li>
+                <li><%= link_to "Try Something New", "/recipes/try", class: "navbar_link"%></li>
+                <li><%= link_to "Contact Us", "/contact", class: "navbar_link"%></li>
                 <li><%= link_to "Edit Profile", edit_user_registration_path,  :class => 'navbar-link'  %></li>
                 <li><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>  </li>
               </ul>

@@ -3,7 +3,7 @@
     <div class="show-container">
 
     <br><br>
-      <img src="<%= @response.body["image"] %>">
+      <%= image_tag @response.body["image"] %>
       <br>
       <h2><%= @response.body["title"] %></h2>
 

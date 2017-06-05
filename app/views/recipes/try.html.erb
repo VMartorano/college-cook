@@ -6,7 +6,7 @@
     <% @response ["recipes"].each do |response| %>
       <a href="/recipes/show/<%= response ["id"]%>">
         <div class="try-box">
-          <img src="<%= response ["image"] %>")>
+          <%= image_tag response ["image"] %>
           <br>
           <p><%= response ["title"] %></p>
           <br>

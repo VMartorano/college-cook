@@ -3,8 +3,9 @@
   <div class = "try-container">
     <% @response.each do |response| %>
       <a href="/recipes/show/<%= response ["id"]%>">
+        <%= link_to "/recipes/show", response ["id"] %>
         <div class="try-box">
-          <img src="<%= response ["image"] %>")>
+          <%= image_tag response ["image"], class: => "recipe_pic" %>
           <br>
           <p><%= response ["title"] %></p>
           <br>
