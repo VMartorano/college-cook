@@ -3,7 +3,10 @@
 
 ##### May 31, 2017
 
-
+### Demo User Information:
+###### Email: newchef@gmail.com
+###### Password: cooking
+---
 ###Technologies Used:
 
 * HTML
