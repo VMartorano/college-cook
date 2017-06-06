@@ -3,7 +3,7 @@
 @media (max-width: 48em) {
 
   .log-container {
-    background-image: url("food_background.jpg");
+    background-image: image-url("food_background.jpg");
     padding-top: 60px;
     padding-bottom: 70px;
     background-repeat: no-repeat;
@@ -46,7 +46,7 @@
   }
 
   .edit-bg {
-    background-image: url("edit-bg.jpg");
+    background-image: image-url("edit-bg.jpg");
     padding-top: 60px;
     padding-bottom: 90px;
     background-repeat: no-repeat;
@@ -82,7 +82,7 @@
 @media (min-width: 48em) {
 
   .log-container {
-    background-image: url("food_background.jpg");
+    background-image: image-url("food_background.jpg");
     padding-top: 60px;
     padding-bottom: 700px;
     background-repeat: no-repeat;
@@ -125,7 +125,7 @@
   }
 
   .edit-bg {
-    background-image: url("edit-bg.jpg");
+    background-image: image-url("edit-bg.jpg");
     padding-top: 60px;
     padding-bottom: 70px;
     background-repeat: no-repeat;
